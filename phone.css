@@ -1,0 +1,39 @@
+body{
+    background-color: tomato;
+}
+/* navigation section */
+
+#navbar{
+    flex-wrap: wrap;
+}
+#navbar::before {
+    height: 108%;
+}
+#logo {
+    margin: 0px 15px;
+}
+/* Home section */
+
+#home{
+    height: 46vh;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+   height:43vh;
+   
+}
+/* services section */
+#services{
+flex-direction: column;
+}
+#services .box{
+    
+
+}
+
+/* clients section */
+
+/* contact us section */
+
+/* footer section */

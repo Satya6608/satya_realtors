@@ -1,0 +1,346 @@
+/* reset css */
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+html{
+    scroll-behavior:smooth;
+}
+/* Variables for reuse */
+:root{
+    --nav-color: #03111f;
+}
+/* Navbar design */
+
+ #navbar{
+    font-family: 'Bree Serif', serif;
+     position: fixed;
+     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 75px;
+    /* background-color: var(--nav-color); */
+}
+/* logo and img design */
+#logo{
+    margin: 10px 20px;
+}
+#logo img{
+    height: 57px;
+    margin: 12px;
+
+}
+/* list styling */
+#navbar ul{
+    display: flex;
+    
+}
+#navbar::before{
+   content: "";
+   background-color: var(--nav-color);
+   position: absolute;
+   top:0px;
+   left: 0px;
+   height: 90%;
+   width: 100%;
+   z-index: -1;
+   opacity: .5;
+}
+#navbar ul li {
+   
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navbar ul li a{
+    font-family: 'Bree Serif', serif;
+    color:  white;
+    display: block;
+    margin: 15px 17px;
+    padding: 10px 21px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    font-family: 'Bree Serif', serif;
+    color:  rgb(0, 0, 0);
+    background-color: white;
+    border-radius: 20px;
+    display: block;
+    margin: 15px 17px;
+    padding: 10px 21px;
+    text-decoration: none;
+}
+/* search button styling */
+#navbar input{
+    border: 2p solid  yellow;
+    border-radius: 15px;
+    padding: 5px;
+}
+.btn{
+    font-family: 'Bree Serif', serif;
+    margin: 9px 9px;
+    padding: 10px 13px;
+    font-size: 1.0rem;
+    cursor: pointer;
+    border-radius: 24px;
+}
+.btn a{
+    text-decoration: none;
+}
+.btn:hover{
+    font-family: 'Bree Serif', serif;
+    padding: 10px 13px;
+    font-size: 1.0rem;
+    cursor: pointer;
+    color: black;
+    background-color:rgb(91, 216, 132);
+}
+
+
+
+/* Styling of home section */
+#home{
+    display: flex;
+    flex-direction: row;
+    height: 109vh;
+    justify-content: center;
+    align-items: center;
+}
+#home .home-box{
+    margin: 10px;
+    padding: 15px;
+      border-radius: 25px;
+    background:transparent;
+    width: 50%;
+}
+#home .form-box{
+    height: 50%;
+    position:relative;
+    z-index: -1;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 25px;
+    background:transparent;
+    width: 50%;
+}
+#con-home{
+    
+    margin-top: 44px;
+    position: relative;
+    z-index: -1;
+}
+
+#con-home-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 20px;
+
+}
+#con-home-box input,
+#con-home-box textarea{ 
+    font-family: 'Baloo Bhai 2', cursive;
+width: 100%;
+padding: 0.4rem;
+font-size: 1.1rem;
+
+}
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+    font-family: 'Baloo Bhai 2', cursive;
+    font-size: 1.3rem;
+}
+#home::before{
+    content: "";
+    position: absolute;
+    background: url(img/img1.jpg) no-repeat center center/cover;
+    top:0px;
+    left: 0px;
+    height:112vh;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.6;
+}
+#home h1{
+    
+    text-align: center;
+    
+}
+#home p{
+    font-family: 'Baloo Bhai 2', cursive;
+    text-align: center;
+    font-size: 1rem;
+}
+/*services section*/
+
+
+#services{
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
+    padding: 11px;
+    display: flex;
+}
+#services .box{
+    
+    font-family: 'Baloo Bhai 2', cursive;
+    margin: 10px;
+    padding: 15px;
+    border: 2px solid rgb(226, 197, 197);
+    border-radius: 25px;
+    background-color: rgb(250, 237, 234);
+}
+#services .box img{
+    display: block;
+    margin: auto;
+    height: 150px;
+    top: 10px;
+    transition: 1s ease-in;
+}
+#services .box img:hover{
+    display: block;
+    margin: auto;
+    height: 200px;
+    top: 10px;
+    transition: 1s ease-in;
+}
+#about{
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
+    padding: 11px;
+    display: flex;
+}
+#about .box{
+    
+    font-family: 'Baloo Bhai 2', cursive;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 25px;
+    width: 50%;
+}
+#about .box img{
+    display: block;
+    margin: auto;
+    width: 100%;
+    top: 10px;
+}
+
+#Gallery{
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
+    padding: 11px;
+    display: flex;
+}
+#Gallery .box{
+    
+    font-family: 'Baloo Bhai 2', cursive;
+    margin: 10px;
+    padding: 15px;
+    border: 2px solid rgb(226, 197, 197);
+    border-radius: 25px;
+    background-color: rgb(250, 237, 234);
+}
+#Gallery .box img{
+    display: block;
+    margin: auto;
+    height: 150px;
+    top: 10px;
+    transition: 1s ease-in;
+}
+#Gallery .box img:hover{
+    display: block;
+    margin: auto;
+    height: 300px;
+    top: 10px;
+    transition: 1s ease-in;
+}
+#about{
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
+    padding: 11px;
+    display: flex;
+}
+/*Contact section*/
+
+#contact{
+    
+    margin-top: 44px;
+}
+#contact::before{
+    content: "";
+position: absolute;
+height: 100%;
+width: 100%;
+background: url(img/img3.jpg) no-repeat center center/cover;
+z-index: -1;
+opacity: 0.5 ;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 20px;
+
+}
+#contact-box input,
+#contact-box textarea{ 
+    font-family: 'Baloo Bhai 2', cursive;
+width: 100%;
+padding: 0.4rem;
+font-size: 1.1rem;
+z-index: -1;
+position: relative;
+}
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+    font-family: 'Baloo Bhai 2', cursive;
+    font-size: 1.3rem;
+}
+
+footer{
+    background-color: var(--nav-color);
+    color: white;
+    padding: 12px 20px;
+}
+#foot{
+    display: flex;
+    justify-content: space-between;
+}
+
+#foot .box1 img{
+    width: 10%;
+}
+/*utility classes*/
+.h-primary{
+    font-family: 'Bree Serif', serif;
+    font-size: 3.8rem;
+    padding: 12px;
+}
+.h-secondary{
+    font-family: 'Bree Serif', serif;
+    font-size: 2.1rem;
+    padding: 7px;
+    margin-top: 3px;
+}
+.center{
+    margin-top: 10px;
+    text-align: center;
+}
+.white{
+    background-color: black;
+    color:white;}
+.white:hover{
+    background-color:white ;
+    color:black;
+    cursor: pointer;
+}
