@@ -115,20 +115,21 @@ html{
     width: 50%;
 }
 #home .form-box{
-    height: 50%;
-    position:relative;
-    z-index: -1;
+    height: auto;
+    /* position:relative;
+    z-index: -1; */
     margin: 10px;
     padding: 15px;
     border-radius: 25px;
     background:transparent;
     width: 50%;
 }
-#con-home{
-    
-    margin-top: 44px;
-    position: relative;
-    z-index: -1;
+.con{
+    border-radius: 37px;
+    box-shadow: 33px 33px 66px #aaa, -33px -33px 66px #ffffff;
+    height: auto;
+    width: 45%;
+    padding: 21px;
 }
 
 #con-home-box{
@@ -142,17 +143,12 @@ html{
 #con-home-box input,
 #con-home-box textarea{ 
     font-family: 'Baloo Bhai 2', cursive;
-width: 100%;
-padding: 0.4rem;
-font-size: 1.1rem;
-
+    width: 100%;
+    font-size: 0.8rem;
+    margin: 4px;
 }
 #contact-box form{
-    width: 40%;
-}
-#contact-box label{
-    font-family: 'Baloo Bhai 2', cursive;
-    font-size: 1.3rem;
+    width: 50%;
 }
 #home::before{
     content: "";
@@ -208,6 +204,10 @@ font-size: 1.1rem;
     top: 10px;
     transition: 1s ease-in;
 }
+#about-us{
+    background: black;
+    color:rgb(245, 223, 223);
+}
 #about{
     justify-content: center;
     align-items: center;
@@ -216,10 +216,11 @@ font-size: 1.1rem;
     display: flex;
 }
 #about .box{
-    
+    color: black;
     font-family: 'Baloo Bhai 2', cursive;
     margin: 10px;
     padding: 15px;
+    background: rgb(243, 195, 167);
     border-radius: 25px;
     width: 50%;
 }
@@ -270,19 +271,20 @@ font-size: 1.1rem;
 /*Contact section*/
 
 #contact{
-    
+    display: flex;
     margin-top: 44px;
 }
 #contact::before{
     content: "";
-position: absolute;
-height: 100%;
-width: 100%;
-background: url(img/img3.jpg) no-repeat center center/cover;
-z-index: -1;
-opacity: 0.5 ;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: url(img/img3.jpg);
+    z-index: -1;
+    opacity: 0.5 ;
 }
-#contact-box{
+ #contact-box{
+    width:50% ;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -293,11 +295,9 @@ opacity: 0.5 ;
 #contact-box input,
 #contact-box textarea{ 
     font-family: 'Baloo Bhai 2', cursive;
-width: 100%;
-padding: 0.4rem;
-font-size: 1.1rem;
-z-index: -1;
-position: relative;
+    width: 100%;
+    padding: 2px;
+    font-size: 1rem;
 }
 #contact-box form{
     width: 40%;
@@ -305,12 +305,20 @@ position: relative;
 #contact-box label{
     font-family: 'Baloo Bhai 2', cursive;
     font-size: 1.3rem;
+} 
+#content{
+    width: 50%;
 }
-
 footer{
     background-color: var(--nav-color);
     color: white;
     padding: 12px 20px;
+}
+
+.align{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 #foot{
     display: flex;
@@ -318,9 +326,10 @@ footer{
 }
 
 #foot .box1 img{
-    width: 10%;
+    width: 28px;
 }
 /*utility classes*/
+
 .h-primary{
     font-family: 'Bree Serif', serif;
     font-size: 3.8rem;
@@ -336,11 +345,10 @@ footer{
     margin-top: 10px;
     text-align: center;
 }
-.white{
-    background-color: black;
-    color:white;}
-.white:hover{
-    background-color:white ;
-    color:black;
-    cursor: pointer;
+.margin-r{
+    margin-right: 80px;
+}
+.bg{
+    background: rgb(189, 179, 176);
+    color: black;
 }
