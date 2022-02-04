@@ -200,7 +200,7 @@ html{
 #services .box img:hover{
     display: block;
     margin: auto;
-    height: 200px;
+    transform: translate scale(1.2);
     top: 10px;
     transition: 1s ease-in;
 }
